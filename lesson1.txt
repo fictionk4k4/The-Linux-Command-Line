@@ -1,11 +1,11 @@
-# date command :
+#date command :
 
 This command show displays the current time and date
 
 [quang@at10e ~]$ date
 Mon Nov 30 09:32:12 ICT 2015
 
-# cal command :
+#cal command :
 
 Displays a calendar of current month and bold black current day :
 
@@ -18,7 +18,7 @@ Su Mo Tu We Th Fr Sa
 22 23 24 25 26 27 28
 29 30
 
-# df command :
+#df command :
 
 Displays the current amount of free space on your disk drivers :
 [quang@at10e ~]$ df
@@ -30,7 +30,7 @@ tmpfs                     1892892    9268   1883624   1% /run
 tmpfs                     1892892       0   1892892   0% /sys/fs/cgroup
 /dev/sda7                  505580  172376    333204  35% /boot
 
-# free command :
+#free command :
 
 Displays the amount of free memory :
 
