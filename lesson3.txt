@@ -1,0 +1,75 @@
+ls commands :
+
+List all file and directory contained in the current working directory
+
+[quang@at10e ~]$ ls
+Desktop    Downloads  Music     Public     Videos
+Documents  Github     Pictures  Templates
+
+We can use ls to list multiple directories. In this exam we will list the user's home directory (symbolized  by the ~ character ) and the /user directory :
+
+[quang@at10e ~]$ ls ~ /usr/
+/home/quang:
+Desktop    Downloads  Music     Public     Videos
+Documents  Github     Pictures  Templates
+
+/usr/:
+bin  etc  games  include  lib  lib64  libexec  local  sbin  share  src  tmp
+
+Many commands allow multiple short options to to be strung together.
+
+[quang@at10e ~]$ ls -lt
+total 4
+drwxr-xr-x. 2 quang quang 4096 Nov 30 12:13 Desktop
+drwxr-xr-x. 2 quang quang   79 Nov 30 12:08 Downloads
+drwxr-xr-x  3 root  root    35 Nov 30 11:04 Github
+drwxr-xr-x. 2 quang quang    6 Nov 22 13:41 Music
+drwxr-xr-x. 2 quang quang    6 Nov 22 13:41 Pictures
+drwxr-xr-x. 2 quang quang    6 Nov 22 13:41 Videos
+drwxr-xr-x. 2 quang quang    6 Nov 22 13:41 Documents
+drwxr-xr-x. 2 quang quang    6 Nov 22 13:41 Public
+drwxr-xr-x. 2 quang quang    6 Nov 22 13:41 Templates
+
+Its also support long options. We add the long option --reverse to reverse the oder of the sort :
+
+[quang@at10e ~]$ ls -lt --reverse
+total 4
+drwxr-xr-x. 2 quang quang    6 Nov 22 13:41 Templates
+drwxr-xr-x. 2 quang quang    6 Nov 22 13:41 Public
+drwxr-xr-x. 2 quang quang    6 Nov 22 13:41 Documents
+drwxr-xr-x. 2 quang quang    6 Nov 22 13:41 Videos
+drwxr-xr-x. 2 quang quang    6 Nov 22 13:41 Pictures
+drwxr-xr-x. 2 quang quang    6 Nov 22 13:41 Music
+drwxr-xr-x  3 root  root    35 Nov 30 11:04 Github
+drwxr-xr-x. 2 quang quang   79 Nov 30 12:08 Downloads
+drwxr-xr-x. 2 quang quang 4096 Nov 30 12:13 Desktop
+
+The most common are listed below :
+
+	-a 		-all 	 : list all files, even those  with names that begin  with a period, which are normal not listed [i.e., hidden].
+
+	-d 		-directory : Ordinarily, if a directory is specified, ls will list the contents of the directory, not itself.  Use this option  on conjunction with the -l option to see details about  the directory rather than its contents.
+
+	-F 		--Classify : This option will append an indicator character to the end of each listed name (for example, a forward slash if the name is a directory).
+
+	-h 		--human-readable : In long format listings, display file sizes in human-readable format rather than in bytes.
+
+	-l 		: Display results in long format
+
+	-r 		--reverse : Display the results in reverse oder. Normally, ls displays its results in ascending alpha-betical order.
+
+	-S 		: Sort results by file size
+
+	-t 		: Sort by modification time.
+
+
+file command : 
+
+Determining a File's Type 
+
+[quang@at10e Desktop]$ file Hoc-Perl.pdf 
+Hoc-Perl.pdf: PDF document, version 1.5
+
+less command :
+
+The less command is a program to view text files.
