@@ -7,7 +7,7 @@ Mon Nov 30 09:32:12 ICT 2015
 
 #cal command :
 
-Displays a calendar of current month and bold black current day :
+Display a calendar of current month and bold black current day :
 
 [quang@at10e ~]$ cal
     November 2015   
