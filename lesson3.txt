@@ -110,7 +110,7 @@ Directories Found on Linux Systems :
 /usr/share :	/usr/share contains all the shared data  used by programs in /usr/bin. This includes things  like 					default configurations files, icons, screen backgrounds, sound file, etc.
 /usr/share/doc : 	Most packages installed on the system will include some kind of documentation files, icons, 						screen backgrounds, sound files, etc.
 /var :		With the exception of /tmp and /home, the directories we have looked at so far remain relatively  static			; that is, their contents don't change. The /var directory tree is where data that likely to change is 				stored. Various database, spool files, user mail,etc are located here.
-/var/log :	/var/log contains log file, records of various system activity. These are very important and should be 				monitored from time to time. The most useful one is /var/log/messages. Note that for security reasons on some systems, you must be the superuser to view log file.
+/var/log :	/var/log contains log file, records of various system activity. These are very important and should be 				monitored from time to time. The most useful one is /var/log/messages. Note that for security reasons 				on some systems, you must be the superuser to view log file.
 
 
 
